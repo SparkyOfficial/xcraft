@@ -1,0 +1,10 @@
+name: xcraft-example
+version: 1.0.0-SNAPSHOT
+main: io.github.sparky983.example.ExamplePlugin
+api-version: 1.16
+author: Андрій Будильников
+description: Приклад використання бібліотеки xcraft
+commands:
+  xctest:
+    description: Тестова команда для xcraft
+    usage: /xctest <item|gui|schedule>

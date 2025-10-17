@@ -1,0 +1,142 @@
+# Maven #
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Java #
+*.class
+*.jar
+*.war
+*.ear
+*.aar
+*.jpi
+*.hpi
+*.sar
+*.nar
+*.wsr
+*.car
+*.rar
+*.par
+*.ejb
+*.j2ee
+*.ear
+*.war
+*.sar
+*.mar
+*.wsdd
+*.wsdl
+*.xsd
+*.dtd
+*.tld
+*.class
+*.java~
+*.class~
+*.log
+
+# IDE #
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Maven Dependency Analysis #
+dependency-check-report.html
+dependency-check-report.xml
+dependency-check-report.json
+
+# Build Output #
+/bin/
+/build/
+/dist/
+/out/
+
+# Logs #
+*.log
+logs/
+log/
+
+# Minecraft Server Files #
+world/
+world_nether/
+world_the_end/
+plugins/
+plugins/*
+logs/
+*.log
+server.properties
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+usercache.json
+cache/
+cache/*
+
+# IntelliJ IDEA #
+out/
+*.idea
+
+# Eclipse #
+.settings/
+.project
+.classpath
+*.launch
+*.settings
+
+# NetBeans #
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Gradle #
+.gradle/
+build/
+
+# VS Code #
+.vscode/
+
+# macOS #
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows #
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Temp Files #
+*.tmp
+*.temp
+*~
