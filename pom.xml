@@ -63,6 +63,31 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <finalName>xcraft-full</finalName>
+                            <artifactSet>
+                                <includes>
+                                    <include>io.github.sparky983:xcraft-core</include>
+                                    <include>io.github.sparky983:xcraft-ui</include>
+                                    <include>io.github.sparky983:xcraft-items</include>
+                                    <include>io.github.sparky983:xcraft-world</include>
+                                    <include>io.github.sparky983:xcraft-network</include>
+                                </includes>
+                            </artifactSet>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
