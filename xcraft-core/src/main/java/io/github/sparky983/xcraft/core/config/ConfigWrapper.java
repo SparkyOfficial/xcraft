@@ -135,7 +135,7 @@ public class ConfigWrapper {
             return;
         }
         
-        if (location == null) {
+        if (location == null || location.getWorld() == null) {
             config.set(path, null);
             return;
         }

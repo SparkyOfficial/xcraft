@@ -7,6 +7,7 @@ import java.util.function.BiConsumer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -37,7 +38,10 @@ public class CommandManager implements CommandExecutor {
         
         commandHandlers.put(commandName.toLowerCase(), handler);
         try {
-            plugin.getCommand(commandName).setExecutor(this);
+            PluginCommand command = (PluginCommand) plugin.getCommand(commandName);
+            if (command != null) {
+                command.setExecutor(this);
+            }
         } catch (Exception e) {
             // ігноруємо помилки реєстрації команди
         }

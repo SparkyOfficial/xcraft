@@ -35,7 +35,7 @@ public class SoundManager {
      * @param pitch тон
      */
     public void playSound(Location location, Sound sound, float volume, float pitch) {
-        if (location == null || sound == null) {
+        if (location == null || sound == null || location.getWorld() == null) {
             return;
         }
         location.getWorld().playSound(location, sound, volume, pitch);

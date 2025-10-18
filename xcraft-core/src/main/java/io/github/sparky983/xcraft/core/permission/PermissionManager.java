@@ -68,10 +68,7 @@ public class PermissionManager {
         }
         
         PermissionAttachment attachment = playerPermissions.computeIfAbsent(player, p -> p.addAttachment(plugin));
-        
-        if (attachment != null) {
-            attachment.setPermission(permission, true);
-        }
+        attachment.setPermission(permission, true);
         
         registerPermission(permission);
     }

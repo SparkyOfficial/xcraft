@@ -42,9 +42,6 @@ public class ScoreboardManager {
         }
         
         Scoreboard scoreboard = scoreboardManager.getNewScoreboard();
-        if (scoreboard == null) {
-            return null;
-        }
         
         Objective objective = scoreboard.registerNewObjective("board", "dummy", title);
         objective.setDisplaySlot(DisplaySlot.SIDEBAR);

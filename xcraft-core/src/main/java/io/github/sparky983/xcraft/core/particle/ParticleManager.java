@@ -34,7 +34,7 @@ public class ParticleManager {
      * @param count кількість частинок
      */
     public void spawnParticle(Particle particle, Location location, int count) {
-        if (particle == null || location == null) {
+        if (particle == null || location == null || location.getWorld() == null) {
             return;
         }
         location.getWorld().spawnParticle(particle, location, count);
@@ -71,7 +71,7 @@ public class ParticleManager {
      */
     public void spawnParticle(Particle particle, Location location, int count, 
                              double offsetX, double offsetY, double offsetZ) {
-        if (particle == null || location == null) {
+        if (particle == null || location == null || location.getWorld() == null) {
             return;
         }
         location.getWorld().spawnParticle(particle, location, count, offsetX, offsetY, offsetZ);

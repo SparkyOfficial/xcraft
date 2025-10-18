@@ -28,7 +28,10 @@ public class XCraftConfig {
             
             // створюємо папку плагіна якщо її немає
             if (!plugin.getDataFolder().exists()) {
-                plugin.getDataFolder().mkdirs();
+                boolean created = plugin.getDataFolder().mkdirs();
+                if (!created) {
+                    plugin.getLogger().warning("не вдалося створити папку для конфігурації");
+                }
             }
         }
         
@@ -64,9 +67,7 @@ public class XCraftConfig {
         try {
             config.save(configFile);
         } catch (IOException e) {
-            if (plugin != null) {
-                plugin.getLogger().severe("не вдалося зберегти конфігурацію " + fileName);
-            }
+            plugin.getLogger().severe("не вдалося зберегти конфігурацію " + fileName);
             e.printStackTrace();
         }
     }
